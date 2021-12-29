@@ -1,0 +1,8 @@
+p{
+    color:blueviolet;
+    margin: auto;
+    
+}
+p:hover{
+    color:pink;
+}

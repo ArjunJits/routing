@@ -1,0 +1,18 @@
+<div class="card" style="float: left;">
+<img src="../../assets/{{selected_product[0].product_image}}" height="200px" width="150px"/>
+</div>
+<div style="float: left;padding: 15px;margin-top: 10px;">
+<input type="button"  style="margin-left: 120px;margin-top: 0px;" class="btn btn-success"   
+value="Back" (click)="funPrev()" />
+<p> Product id: {{selected_product[0].product_id}} </p>
+<p>Product Name: <b>{{selected_product[0].product_name}} </b> </p>
+<p>Price: {{selected_product[0].product_price}}</p>
+<p>Description:{{selected_product[0].product_desc}} </p>
+<input type="button" style="margin-left: 120px; margin-top: 10px; "
+class="btn btn-success" value="Next" (click)="funNext()"/>
+</div>
+
+<div class="card">
+    <input type="button"  style="margin-left: 120px;margin-bottom: 100px;" class="btn btn-warning"   
+     value="PreviosPage" [routerLink]="['/dp']" />
+</div>

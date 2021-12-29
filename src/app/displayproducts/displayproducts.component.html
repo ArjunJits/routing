@@ -1,0 +1,14 @@
+<br/>   
+    <div *ngFor="let proinfo of service.products_info">
+        <div class="card" id="div1">
+        <img src="../../assets/{{proinfo.product_image}}" width="120px" height="100px" >
+        <h5> Product Name:{{proinfo.product_name}}</h5>
+        <h5>Product Price:{{proinfo.product_price}}</h5>
+        <input type="button" value="Show More" class="btn btn-primary"
+         [routerLink]="['pd',proinfo.product_id]">
+        </div>
+    </div>
+    
+
+<!-- {{service.products_info| json}} -->
+
